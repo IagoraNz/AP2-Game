@@ -1,23 +1,103 @@
-# 📄 Algorithms and Programming II in practice: snake game
-The implementation of the game involves manipulating graphic elements such as the snake and food, movement control and collision detection.
+# 🐍 AP2-Game: Snake Game Clássico
 
-## :link: Development environment
-1. Regarding GCC
+![Status do Projeto](https://img.shields.io/badge/Status-Concluído-green)
+![C Language](https://img.shields.io/badge/C-Language-blue)
+![Grade](https://img.shields.io/badge/Grade-10%2F10-brightgreen)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
+Este repositório contém o trabalho final da disciplina de **Algoritmos e Programação II**, focado na implementação do clássico jogo da cobrinha (Snake Game) em linguagem C.
+
+## 📄 Sobre o projeto
+
+O objetivo deste projeto é desenvolver uma implementação completa do jogo Snake utilizando programação em C, com manipulação de elementos gráficos, controle de movimento e detecção de colisões.
+
+### 🎯 Objetivos específicos
+- Implementar a lógica do jogo Snake com controle de movimento em 4 direções.
+- Desenvolver sistema de pontuação baseado na coleta de frutas.
+- Criar detecção de colisões com paredes e com o próprio corpo da cobra.
+- Implementar menu interativo com opções de jogo, tutorial e níveis de dificuldade.
+- Gerenciar velocidade dinâmica da cobra conforme a pontuação aumenta.
+- Utilizar manipulação de console para renderização gráfica em tempo real.
+
+## 🎮 Funcionalidades
+
+O jogo oferece as seguintes funcionalidades:
+
+- **Menu principal**: Opções para jogar, acessar tutorial, ajustar níveis de dificuldade e visualizar ranking de pontos.
+- **Controles**: Movimentação da cobra usando teclas WASD ou setas direcionais.
+- **Sistema de pontuação**: Pontos acumulados ao coletar frutas.
+- **Geração aleatória de frutas**: Frutas aparecem em posições aleatórias válidas no tabuleiro.
+- **Detecção de colisões**: Game over ao colidir com paredes ou com o próprio corpo.
+- **Velocidade progressiva**: A cobra acelera conforme o jogador coleta mais frutas.
+- **Opção de replay**: Possibilidade de jogar novamente ou retornar ao menu após o game over.
+
+## 🛠️ Tecnologias utilizadas
+
+O projeto foi desenvolvido em **C** utilizando as seguintes bibliotecas:
+
+- **stdio.h**: Entrada e saída padrão.
+- **stdlib.h**: Funções de utilidade geral.
+- **time.h**: Geração de números aleatórios.
+- **conio.h**: Controle de entrada do teclado sem buffer.
+- **windows.h**: Manipulação de console e cores no Windows.
+
+## 🚀 Como executar
+
+### Pré-requisitos
+Certifique-se de ter o compilador GCC instalado no seu sistema Windows.
+
+### Compilação e execução
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/IagoraNz/AP2-Game
+   cd AP2-Game
+   ```
+
+2. Compile o código:
+   ```bash
+   gcc main.c -o snake_game
+   ```
+
+3. Execute o jogo:
+   ```bash
+   ./snake_game
+   ```
+
+## 🎯 Como jogar
+
+1. **Controles**:
+   - `W` ou `↑`: Mover para cima
+   - `A` ou `←`: Mover para esquerda
+   - `S` ou `↓`: Mover para baixo
+   - `D` ou `→`: Mover para direita
+
+2. **Objetivo**: Colete o máximo de frutas possível sem colidir com as paredes ou com o próprio corpo da cobra.
+
+3. **Pontuação**: Cada fruta coletada aumenta sua pontuação e o tamanho da cobra.
+
+## 📂 Estrutura do repositório
+
 ```
-gcc.exe (tdm64-1) 10.3.0
-Copyright (C) 2020 Free Software Foundation, Inc.
-This is free software; see the source for copying conditions.  There is NO
-warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-```
-2. And about the Visual Studio Code
-```
-1.89.1
+📂AP2-Game/
+├── 📄 main.c              # Implementação principal do jogo
+├── 📄 maincristina.c      # Versão alternativa do código
+├── 📂 output/             # Arquivos de saída da compilação
+├── 📝 LICENSE             # Licença de uso
+└── 📄 README.md           # Documentação do projeto
 ```
 
-## :link: Project description
+## 📊 Resultados
 
-**Final grade:** 10/10
+**Nota Final:** 10/10
 
-This is a project developed as part of the 2rd evaluation of the Algorithms and Programming II discipline, taught by Professor Alan Rafael Ferreira dos Santos at the Federal University of Piauí - Campus Senador Helvídio Nunes de Barros, in the Bachelor's degree in Information Systems.
+O projeto foi avaliado com nota máxima, demonstrando:
+- Implementação completa das funcionalidades propostas
+- Código bem estruturado e organizado
+- Uso adequado de estruturas de dados e funções
+- Controle eficiente de fluxo do jogo
+- Interface de console funcional e responsiva
 
-This C program implements the classic snake game, where the player controls a snake in a limited environment and must collect fruit to increase his score, avoiding colliding with the walls or the snake's own body. The game offers a menu with options to play, access a tutorial, adjust difficulty levels and view a points ranking. During gameplay, the snake moves in four directions (up, down, left and right) in response to keyboard inputs. The snake's speed increases as the player collects more fruits. The game ends when the snake collides with the edges of the board or its own body, displaying the final score and offering the option to play again or exit the game. The code uses functions to manage the snake's movement, random fruit generation, collision detection and interaction with the player through the console.
+## 📝 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
