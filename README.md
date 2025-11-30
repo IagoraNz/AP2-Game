@@ -2,7 +2,7 @@
 
 ![Status do Projeto](https://img.shields.io/badge/Status-Concluído-green)
 ![C Language](https://img.shields.io/badge/C-Language-blue)
-![Grade](https://img.shields.io/badge/Grade-10%2F10-brightgreen)
+![Nota](https://img.shields.io/badge/Grade-10%2F10-brightgreen)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
 Este repositório contém o trabalho final da disciplina de **Algoritmos e Programação II**, focado na implementação do clássico jogo da cobrinha (Snake Game) em linguagem C.
